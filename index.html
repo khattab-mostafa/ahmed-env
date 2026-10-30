@@ -1,0 +1,56 @@
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> الكوكب الاخضر</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <h1> اهميه الحفاظ علي البيئه</h1>
+  <h3>نحن لا نملك سوي ارض واحده لذا يجب علينا الحفاظ عليها ولا نلوثها لان كل شخص يلحق ضرر بسيط بالبيئه يؤثر سلبا علي كل
+    الكوكب ويخل بالتوازب البيئي مما يدمر مقومات الحياه </h3>
+
+  <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05" alt="بيئة نظيفة">
+  <h2>تلوث البيئه </h2>
+  <h3>يتسبب الإنسان في تلويث البيئة من خلال الإفراط في استخدام المصانع، وإلقاء النفايات، وحرق الوقود الأحفوري الذي يطلق
+    غازات ضارة في الغلاف الجوي. تؤدي هذه الملوثات إلى ظاهرة الاحتباس الحراري وتغير المناخ، مما يتسبب في تدمير النظم
+    البيئية وتهديد صحة الكائنات الحية. لذلك، أصبح الحفاظ على النظافة البيئية واجباً حتمياً لحماية كوكب الأرض وضمان
+    استمرار الحياة عليه.</h3>
+  <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce" alt="تلوث البيئة">
+  <h2> طرق الحفاظ علي البيئه
+  </h2>
+  <h3>يمكننا الحد من التلوث البيئي عن طريق الاعتماد على مصادر الطاقة النظيفة كالشمسية والرياح، وزيادة المساحات الخضراء،
+    وإعادة تدوير النفايات بدلاً من حرقها. وفائدة ذلك هي تنقية الهواء، الحفاظ على الموارد الطبيعية، وحماية صحة الإنسان
+    والكائنات الحية لضمان العيش في بيئة مستدامة وصحية.</h3>
+  <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" alt="بيئة نظيفة وخضراء">
+
+  <h2> عمل الطالب احمد حسن </h2>
+  <h2>مدرسه تصفا الاعداديه المشتركة</h2>
+</body>
+
+</html>
+<button id="themeToggleBtn"
+  style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background-color: rgb(79, 25, 28); color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;">الوضع
+  النهاري</button>
+<script>
+  const toggleBtn = document.getElementById('themeToggleBtn');
+  const bodyElement = document.body;
+  let isDark = true;
+
+  toggleBtn.addEventListener('click', function () {
+    if (isDark) {
+      bodyElement.style.backgroundColor = '#f4f4f4';
+      bodyElement.style.color = '#222222';
+      toggleBtn.textContent = 'الوضع الليلي';
+      isDark = false;
+    } else {
+      bodyElement.style.backgroundColor = '#121212';
+      bodyElement.style.color = '#ffffff';
+      toggleBtn.textContent = 'الوضع النهاري';
+      isDark = true;
+    }
+  });
+</script>
